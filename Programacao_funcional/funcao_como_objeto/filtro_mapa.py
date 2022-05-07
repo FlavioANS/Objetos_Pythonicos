@@ -11,12 +11,14 @@ def nota_maior_5(aluno):
     _, nota = aluno
     return nota > 5
 
+
 print(list(filter(nota_maior_5, alunos)))
 
 
 def extrair_nome(aluno):
     nome, _ = aluno
     return nome
+
 
 print(list(map(extrair_nome, filter(nota_maior_5, alunos))))
 
